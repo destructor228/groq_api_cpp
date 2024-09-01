@@ -9,6 +9,7 @@ The Groq API Wrapper encapsulates the main functions for interacting with the Gr
 - Retrieving a list of available models
 - Executing a chat completion request
 - Executing tool calls from a model
+- Audio in progress
 
 ## Installation
 
