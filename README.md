@@ -2,6 +2,8 @@
 
 This project provides C++ functions for accessing the [Groq](https://groq.com/) API.
 
+This is an unofficial project, the code is maintained by the community.
+
 ## Description
 
 The Groq API functions include the main capabilities for interacting with the Groq API, such as:
@@ -55,3 +57,4 @@ The example files inside the project are sorted by increasing complexity:
 - `main5_tool_use.cpp`
 
 If you have any further questions or need additional assistance, feel free to ask!
+
