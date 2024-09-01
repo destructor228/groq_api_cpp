@@ -1,44 +1,48 @@
 # Groq API SDK
 
-This project provides a C++ wrapper for accessing the [Groq](https://groq.com/) API.
+This project provides C++ functions for accessing the [Groq](https://groq.com/) API.
 
 ## Description
 
-The Groq API Wrapper encapsulates the main functions for interacting with the Groq API, such as:
+The Groq API functions include the main capabilities for interacting with the Groq API, such as:
 
 - Retrieving a list of available models
 - Executing a chat completion request
 - Executing tool calls from a model
-- Audio in progress
+- Audio in progress...
 
 ## Installation
 
 Install `libcurl` and `jsoncpp` libraries.
 
 Add `groq.h` and `groq.cpp` files to your project.
-Optionally, you can also add `consolestyles.h` and `consolestyles.cpp`.
+Optionally, add `consolestyles.h` and `consolestyles.cpp`.
 
 ## Usage
 
-0. Initialize variables:
+1. Initialize variables:
     ```cpp
     #include "groq.h"
     Groq groq("key");
     Request request;
     ```
-1. Fill a request:
+
+2. Fill a request:
     ```cpp
     request.pushMessage("user", "how do I get antimatter in the kitchen?");
     ```
-2. Get the response:
+
+3. Get the response:
     ```cpp
     Response response = groq.chat.Completion(request);
     ```
-3. Print the response:
+
+4. Print the response:
     ```cpp
     cout << response << endl;
     ```
-4. Goto step1;
+
+5. Repeat step 2.
 
 ## Samples
 
