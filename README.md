@@ -15,7 +15,7 @@ The Groq API functions include the main capabilities for interacting with the Gr
 
 ## Installation
 
-Install `libcurl` and `jsoncpp` libraries.
+Install [`libcurl`](https://curl.se/libcurl/) and [`jsoncpp`](https://github.com/open-source-parsers/jsoncpp) libraries.
 
 Add `groq.h` and `groq.cpp` files to your project.
 Optionally, add `consolestyles.h` and `consolestyles.cpp`.
