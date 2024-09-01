@@ -4,7 +4,7 @@
 //1) create environment Variable GROQ_API_KEY
 Groq groq( get_api_key("GROQ_API_KEY") );
 
-//2) create tools
+//2) create tool
 std::string tool_command(ToolCall * t)
 {
 	std::string style = t->function.get_string("style");
@@ -14,7 +14,7 @@ std::string tool_command(ToolCall * t)
 	std::cout << ConsoleStyles::apply(text, style) << std::endl;
 	return "true";
 }
-//2) create tools
+//2) create tool
 #include <random>
 std::string tool_price(ToolCall* t)
 {
@@ -29,7 +29,7 @@ std::string tool_price(ToolCall* t)
 
 	return price + " gold";
 }
-//2) create tools
+//2) create tool
 std::string tool_telephone(ToolCall* t)
 {
 	std::string item = t->function.get_string("user");
@@ -43,7 +43,7 @@ std::string tool_telephone(ToolCall* t)
 	std::cout << ConsoleStyles::BRIGHT_BLACK << "toolphone: " << item << " = " << phone_number << ConsoleStyles::RESET << std::endl;
 	return phone_number;
 }
-//2) create tools
+//2) create tool
 #ifdef _WIN32
 #include <sapi.h>
 std::string tool_speech(ToolCall* t)
@@ -92,7 +92,7 @@ std::string tool_speech(ToolCall* t)
 	return "true";
 }
 #endif
-//2) create tools
+//2) create tool
 bool breakflag = false;
 std::string tool_exit(ToolCall* t)
 {
