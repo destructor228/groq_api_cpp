@@ -22,29 +22,29 @@ Optionally, add `consolestyles.h` and `consolestyles.cpp`.
 
 ## Usage
 
-1. Initialize variables:
+0. Initialize variables:
     ```cpp
     #include "groq.h"
     Groq groq("key");
     Request request;
     ```
 
-2. Fill a request:
+1. Fill a request:
     ```cpp
     request.pushMessage("user", "how do I get antimatter in the kitchen?");
     ```
 
-3. Get the response:
+2. Get the response:
     ```cpp
     Response response = groq.chat.Completion(request);
     ```
 
-4. Print the response:
+3. Print the response:
     ```cpp
     cout << response << endl;
     ```
 
-5. Repeat step 2.
+4. Goto step 1.
 
 ## Samples
 
