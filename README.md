@@ -21,6 +21,7 @@ Optionally, you can also add `consolestyles.h` and `consolestyles.cpp`.
 
 0. Initialize variables:
     ```cpp
+    #include "groq.h"
     Groq groq("key");
     Request request;
     ```
